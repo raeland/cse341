@@ -1,3 +1,5 @@
+//const mongodb = require('../DB/database')
+
 const awesomeFunction = (req, res, next) => {
     res.json('Athena Burrito');
 };
