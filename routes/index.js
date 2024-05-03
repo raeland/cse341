@@ -1,8 +1,16 @@
-const routes = require('express').Router()
+const router = require('express').Router()
+const professionalRoutes = require('./professional')
+const contactsRoutes = require('./contacts')
 
 const myController = require('../controllers')
 
-routes.get('/', myController.awesomeFunction)
-routes.get('/awesome', myController.returnAnotherPerson)
+//GET
+router.get('/', myController.awesomeFunction)
+router.get('/awesome', myController.returnAnotherPerson)
 
-module.exports = routes;
+//USE
+router.use('/professional', professionalRoutes)
+router.use('/contacts', contactsRoutes)
+
+
+module.exports = router

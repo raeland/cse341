@@ -1,14 +1,14 @@
-//const mongodb = require('../DB/database')
+const mongodb = require('../DB/database')
 
 const awesomeFunction = (req, res, next) => {
-    res.json('Athena Burrito');
-};
+    res.json('Athena Burrito')
+}
 
 const returnAnotherPerson = (req, res, next) => {
-    res.json('Another Awesome Person');
-};
+    res.json('Another Awesome Person')
+}
 
 module.exports = { 
     awesomeFunction,
     returnAnotherPerson
-};
+}
