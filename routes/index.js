@@ -7,6 +7,8 @@ const myController = require('../controllers')
 //GET
 router.get('/', myController.awesomeFunction)
 router.get('/awesome', myController.returnAnotherPerson)
+router.get('/professional', professionalRoutes)
+router.get('/contacts', contactsRoutes)
 
 //USE
 router.use('/professional', professionalRoutes)
