@@ -4,5 +4,6 @@ const router = express.Router()
 
 //GET
 router.get('/', professionalController.getData)
+// localhost:8080/professional/
 
 module.exports = router
