@@ -14,5 +14,4 @@ router.get('/contacts', contactsRoutes)
 router.use('/professional', professionalRoutes)
 router.use('/contacts', contactsRoutes)
 
-
 module.exports = router

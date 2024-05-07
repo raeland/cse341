@@ -1,0 +1,23 @@
+[
+   {
+        "firstName":"Athena",
+        "lastName":"Burrito",
+        "email":"doodle@poodle.com",
+        "favoriteColor":"black",
+        "birthday":"05/03/19"
+    },
+    {
+        "firstName":"Kendal",
+        "lastName":"Bendal",
+        "email":"ljkt24@gmail.com",
+        "favoriteColor":"blue",
+        "birthday":"08/24/08"
+    },
+    {
+        "firstName":"Bubba",
+        "lastName":"Gump",
+        "email":"varaland@outlook.com",
+        "favoriteColor":"purple",
+        "birthday":"10/24/03"
+    }
+]
