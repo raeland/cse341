@@ -2,6 +2,8 @@ const express = require('express')
 const bodyParser = require('body-parser')
 const MongoClient = require('mongodb').MongoClient
 const mongodb = require('./DB/database')
+const routes = require('./routes')
+//const contactsRoutes = require('../routes/contacts')
 const professionalRoutes = require('./routes/professional')
 
 const port = process.env.PORT || 8080
@@ -13,6 +15,7 @@ app.use((req, res, next) => {
     next()
 })
 app.use('/professional', professionalRoutes)
+app.use('/', routes)
 
 mongodb.initDb((err, mongodb) => {
     if (err) {

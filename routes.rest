@@ -1,16 +1,20 @@
+// LOCALHOST
+###
 GET http://localhost:8080 HTTP/1.1
 
 ###
 GET http://localhost:8080/contacts
 
 ###
-GET http://localhost:8080/awesome HTTP/1.1
+GET http://localhost:8080/contacts/663abd3856ec25b930a292d1
+
 
 ###
-GET https://cse341-4bnb.onrender.com HTTP/1.1
+GET http://localhost:8080/awesome HTTP/1.1
 
 ###
 GET http://localhost:8080/professional
 
+// PRODUCTION DEPLOYED
 ###
-GET http://localhost:8080/contacts
+GET https://cse341-4bnb.onrender.com HTTP/1.1
