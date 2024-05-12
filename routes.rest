@@ -2,11 +2,36 @@
 ###
 GET http://localhost:8080 HTTP/1.1
 
-###
+### Get ALL Contacts
 GET http://localhost:8080/contacts
 
-###
+### Get Contact by ID
 GET http://localhost:8080/contacts/663abd3856ec25b930a292d1
+
+### CREATE Contact
+POST http://localhost:8080/contacts HTTP/1.1
+Content-Type: application/json
+{
+    "firstName":"Samantha",
+    "lastName":"Burrito",
+    "email":"sam@poodle.com",
+    "favoriteColor":"purple",
+    "birthday":"05/20/08"
+}
+
+### UPDATE Contact
+PUT http://localhost:8080/contacts/663abd3856ec25b930a292d1 HTTP/1.1
+Content-Type: application/json
+{
+    "firstName":"Kendal",
+    "lastName":"Bendal",
+    "email":"ljkt24@gmail.com",
+    "favoriteColor":"blue",
+    "birthday":"08/24/08"
+}
+
+### DELETE Contact
+DELETE http://localhost:8080/contacts/663abd3856ec25b930a292d1
 
 
 ###
@@ -15,6 +40,6 @@ GET http://localhost:8080/awesome HTTP/1.1
 ###
 GET http://localhost:8080/professional
 
-// PRODUCTION DEPLOYED
+// PRODUCTION DEPLOYED ON RENDER
 ###
 GET https://cse341-4bnb.onrender.com HTTP/1.1
