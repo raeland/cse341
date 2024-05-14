@@ -54,10 +54,27 @@ GET https://cse341-4bnb.onrender.com/contacts HTTP/1.1
 POST https://cse341-4bnb.onrender.com HTTP/1.1
 Content-Type: application/json
 
+{
+    "firstName":"Samantha",
+    "lastName":"Burrito",
+    "email":"sam@poodle.com",
+    "favoriteColor":"purple",
+    "birthday":"05/20/08"
+}
+
 content
 ## PUT Contact PUT 
 PUT https://cse341-4bnb.onrender.com HTTP/1.1
 Content-Type: application/json
+
+{
+    "firstName":"Samantha",
+    "lastName":"Burrito",
+    "email":"sam@poodle.com",
+    "favoriteColor":"purple",
+    "birthday":"05/20/08"
+}
+
 
 ### DELETE Contact DELETE
 DELETE https://cse341-4bnb.onrender.com/contacts/663abd3856ec25b930a292d1 HTTP/1.1
