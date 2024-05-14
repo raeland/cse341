@@ -1,10 +1,9 @@
 const express = require('express')
 const bodyParser = require('body-parser')
-//const MongoClient = require('mongodb').MongoClient
 const mongodb = require('./DB/database')
-const routes = require('./routes')
-const contactsRoutes = require('./routes/contacts')
-const professionalRoutes = require('./routes/professional')
+//const routes = require('./routes')
+//const contactsRoutes = require('./routes/contacts')
+//const professionalRoutes = require('./routes/professional')
 const app = express()
 
 const port = process.env.PORT || 8080
@@ -14,7 +13,7 @@ app.use((req, res, next) => {
     res.setHeader('Access-Control-Allow-Origin', '*')
     res.setHeader('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept, Z-Key')
     res.setHeader('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE, OPTIONS')
-        next()
+    next()
 })
 
 app.use('/', require('./routes'))

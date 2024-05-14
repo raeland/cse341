@@ -6,7 +6,7 @@ const contactsController = require('../controllers/contacts')
 
 // GET
 router.get('/', contactsController.getAll)
-router.get('/:id', contactsController.getContact)
+router.get('/:id', contactsController.getSingle)
 // POST
 router.post('/', contactsController.createContact)
 // UPDATE
