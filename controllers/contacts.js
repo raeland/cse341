@@ -1,5 +1,6 @@
 const mongodb = require('../DB/database')
-const ObjectId = require('mongodb').ObjectId
+const {ObjectId} = require('mongodb')
+const contactId = require('mongodb').ObjectId
 
 const getAll = async (req, res, next) => {
     const result = await mongodb.getDb().db().collection('contacts').find()
@@ -10,8 +11,9 @@ const getAll = async (req, res, next) => {
 }
 
 const getSingle = async (req, res) => {
-    const contactId = new ObjectId(req.params.id)
-    const result = await mongodb.getDb().db().collection('contacts').find({ _id: contactId })
+    const userId = new contactId(req.params.id)
+    console.log("look here", userId)
+    const result = await mongodb.getDb().db().collection('contacts').find({ _id: userId })
     result.toArray().then((lists) => {
       res.setHeader('Content-Type', 'application/json')
       res.status(200).json(lists[0])
